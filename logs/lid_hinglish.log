@@ -1,0 +1,16 @@
+[hinglish] train 7191 / val 799 / test 750 sentences (92800 train word tokens)
+[hinglish] Model A best val macro-F1 0.8935 with ngram=(1, 4) C=10.0
+  BiLSTM-LID epoch 1: loss 0.4086  val acc 0.9225
+  BiLSTM-LID epoch 2: loss 0.2192  val acc 0.9456
+  BiLSTM-LID epoch 3: loss 0.1804  val acc 0.9502
+  BiLSTM-LID epoch 4: loss 0.1584  val acc 0.9553
+  BiLSTM-LID epoch 5: loss 0.1427  val acc 0.9585
+  BiLSTM-LID epoch 6: loss 0.1298  val acc 0.9585
+  BiLSTM-LID epoch 7: loss 0.1226  val acc 0.9603
+  BiLSTM-LID epoch 8: loss 0.1131  val acc 0.9599
+  BiLSTM-LID epoch 9: loss 0.1080  val acc 0.9582
+  BiLSTM-LID epoch 10: loss 0.1019  val acc 0.9606
+  BiLSTM-LID epoch 11: loss 0.0956  val acc 0.9598
+  BiLSTM-LID epoch 12: loss 0.0909  val acc 0.9593
+[hinglish] Char n-gram + TF-IDF + LogReg: test word acc 0.9575  macro-F1 0.8888
+[hinglish] BiLSTM (word + char-CNN) tagger: test word acc 0.9625  macro-F1 0.9059

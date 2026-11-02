@@ -1,0 +1,9 @@
+numpy>=2.0
+pandas>=2.2
+scikit-learn>=1.5
+torch>=2.4
+streamlit>=1.40
+wordfreq>=3.1        # English word frequencies (Tanglish silver labels + normalizer)
+joblib>=1.4
+matplotlib>=3.9      # optional: only for the notebook
+pytest>=8            # optional: tests

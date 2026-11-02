@@ -1,0 +1,14 @@
+[tanglish] train 30000 / val 2000 / test 3000 sentences (437235 train word tokens)
+[tanglish] Model A best val macro-F1 0.9805 with ngram=(2, 5) C=50.0
+  BiLSTM-LID epoch 1: loss 0.1899  val acc 0.9692
+  BiLSTM-LID epoch 2: loss 0.0820  val acc 0.9795
+  BiLSTM-LID epoch 3: loss 0.0596  val acc 0.9834
+  BiLSTM-LID epoch 4: loss 0.0473  val acc 0.9848
+  BiLSTM-LID epoch 5: loss 0.0400  val acc 0.9864
+  BiLSTM-LID epoch 6: loss 0.0355  val acc 0.9872
+  BiLSTM-LID epoch 7: loss 0.0321  val acc 0.9875
+  BiLSTM-LID epoch 8: loss 0.0294  val acc 0.9868
+  BiLSTM-LID epoch 9: loss 0.0284  val acc 0.9877
+  BiLSTM-LID epoch 10: loss 0.0266  val acc 0.9874
+[tanglish] Char n-gram + TF-IDF + LogReg: test word acc 0.9898  macro-F1 0.9891
+[tanglish] BiLSTM (word + char-CNN) tagger: test word acc 0.9877  macro-F1 0.9869

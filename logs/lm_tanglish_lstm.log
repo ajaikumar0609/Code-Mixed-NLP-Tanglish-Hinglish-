@@ -1,0 +1,13 @@
+[tanglish] sentences train/val/test = 140682/26297/18622; vocab 20000; test OOV rate 10.902%
+LSTM LM on mps: 6.8M params, 140682 train / 26297 val sentences, vocab 20000
+  epoch 1: train ppl 836.2  val ppl 493.7  (116s)
+  epoch 2: train ppl 490.8  val ppl 396.6  (111s)
+  epoch 3: train ppl 401.2  val ppl 352.8  (118s)
+  epoch 4: train ppl 356.4  val ppl 331.3  (112s)
+  epoch 5: train ppl 326.5  val ppl 318.8  (117s)
+  epoch 6: train ppl 306.5  val ppl 303.3  (124s)
+  epoch 7: train ppl 290.6  val ppl 295.9  (121s)
+  epoch 8: train ppl 278.6  val ppl 293.1  (121s)
+  epoch 9: train ppl 268.5  val ppl 285.5  (120s)
+  epoch 10: train ppl 259.8  val ppl 283.4  (113s)
+[tanglish] LSTM     : test ppl 259.4  top1 0.128  top5 0.254  (1206s)

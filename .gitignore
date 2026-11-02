@@ -1,0 +1,13 @@
+.venv/
+venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.DS_Store
+.env
+.env.*
+*.pem
+node_modules/
+# Large raw datasets / oversized model (exceed GitHub limits or too large)
+data/raw/
+models/ngram_tanglish.pkl

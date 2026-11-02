@@ -1,0 +1,31 @@
+{
+  "lid_train_sentences": 7191,
+  "lid_val_sentences": 799,
+  "lid_test_sentences": 750,
+  "lid_skipped_train": {
+    "native_script": 22166,
+    "tokenization_mismatch": 331
+  },
+  "lid_skipped_test": {
+    "native_script": 4199,
+    "tokenization_mismatch": 51
+  },
+  "lm_hinglish": {
+    "test": 4933,
+    "val": 2336,
+    "train": 21022
+  },
+  "raw_sentences": 185973,
+  "after_dedupe_and_min_len": 185670,
+  "removed": 303,
+  "lm_tanglish": {
+    "train": 140682,
+    "val": 26297,
+    "test": 18622
+  },
+  "sources_per_split": {
+    "test": 611,
+    "train": 4752,
+    "val": 500
+  }
+}

@@ -1,0 +1,925 @@
+{
+  "hinglish": {
+    "variant": "hinglish",
+    "reference": "COMI-LINGUA TN test, 3 annotators",
+    "tuning": {
+      "consensus=False,min_count=2,min_ratio=0.2": {
+        "val_wer": 0.13767248748320918,
+        "val_exact": 0.1622431506849315,
+        "entries": 2037
+      },
+      "consensus=False,min_count=2,min_ratio=0.3": {
+        "val_wer": 0.12142595531681113,
+        "val_exact": 0.21789383561643835,
+        "entries": 1858
+      },
+      "consensus=False,min_count=2,min_ratio=0.4": {
+        "val_wer": 0.11690722153027083,
+        "val_exact": 0.2345890410958904,
+        "entries": 1683
+      },
+      "consensus=False,min_count=2,min_ratio=0.5": {
+        "val_wer": 0.11840113297846364,
+        "val_exact": 0.2345890410958904,
+        "entries": 1495
+      },
+      "consensus=False,min_count=2,min_ratio=0.6": {
+        "val_wer": 0.1263366046579757,
+        "val_exact": 0.22003424657534246,
+        "entries": 1241
+      },
+      "consensus=False,min_count=3,min_ratio=0.2": {
+        "val_wer": 0.139085624969472,
+        "val_exact": 0.16138698630136986,
+        "entries": 1280
+      },
+      "consensus=False,min_count=3,min_ratio=0.3": {
+        "val_wer": 0.12312612920552761,
+        "val_exact": 0.21575342465753425,
+        "entries": 1160
+      },
+      "consensus=False,min_count=3,min_ratio=0.4": {
+        "val_wer": 0.11851327260738968,
+        "val_exact": 0.2303082191780822,
+        "entries": 1042
+      },
+      "consensus=False,min_count=3,min_ratio=0.5": {
+        "val_wer": 0.11990917081746265,
+        "val_exact": 0.230736301369863,
+        "entries": 906
+      },
+      "consensus=False,min_count=3,min_ratio=0.6": {
+        "val_wer": 0.1275603622958424,
+        "val_exact": 0.21789383561643835,
+        "entries": 765
+      },
+      "consensus=True,min_count=2,min_ratio=0.2": {
+        "val_wer": 0.1276341171586941,
+        "val_exact": 0.19392123287671234,
+        "entries": 2576
+      },
+      "consensus=True,min_count=2,min_ratio=0.3": {
+        "val_wer": 0.122014360377082,
+        "val_exact": 0.21190068493150685,
+        "entries": 2394
+      },
+      "consensus=True,min_count=2,min_ratio=0.4": {
+        "val_wer": 0.11765855088036338,
+        "val_exact": 0.2285958904109589,
+        "entries": 2237
+      },
+      "consensus=True,min_count=2,min_ratio=0.5": {
+        "val_wer": 0.11817426980560711,
+        "val_exact": 0.23330479452054795,
+        "entries": 2047
+      },
+      "consensus=True,min_count=2,min_ratio=0.6": {
+        "val_wer": 0.12463676100705721,
+        "val_exact": 0.2221746575342466,
+        "entries": 1778
+      },
+      "consensus=True,min_count=3,min_ratio=0.2": {
+        "val_wer": 0.12879990233182761,
+        "val_exact": 0.19049657534246575,
+        "entries": 1501
+      },
+      "consensus=True,min_count=3,min_ratio=0.3": {
+        "val_wer": 0.1234950792449144,
+        "val_exact": 0.20804794520547945,
+        "entries": 1393
+      },
+      "consensus=True,min_count=3,min_ratio=0.4": {
+        "val_wer": 0.11907203907203907,
+        "val_exact": 0.22559931506849315,
+        "entries": 1280
+      },
+      "consensus=True,min_count=3,min_ratio=0.5": {
+        "val_wer": 0.1197069597069597,
+        "val_exact": 0.22988013698630136,
+        "entries": 1165
+      },
+      "consensus=True,min_count=3,min_ratio=0.6": {
+        "val_wer": 0.12585465911310803,
+        "val_exact": 0.2191780821917808,
+        "entries": 1023
+      }
+    },
+    "chosen": {
+      "consensus": false,
+      "min_count": 2,
+      "min_ratio": 0.4,
+      "entries": 1683
+    },
+    "inter_annotator": {
+      "annotator1_vs_annotator2": {
+        "wer": 0.18172188162063857,
+        "cer": 0.07482734646581692
+      },
+      "annotator1_vs_annotator3": {
+        "wer": 0.15038896117877237,
+        "cer": 0.06074062297221601
+      },
+      "annotator2_vs_annotator3": {
+        "wer": 0.15406794416932684,
+        "cer": 0.05955376273517673
+      },
+      "mean_wer": 0.16205959565624592,
+      "mean_cer": 0.06504057739106989
+    },
+    "systems": {
+      "no_normalization (baseline)": {
+        "first_ref": {
+          "wer": 0.2411192214111922,
+          "cer": 0.07865310102290116,
+          "exact_match": 0.03263072557762464
+        },
+        "best_of_refs": {
+          "wer": 0.13647146726440645,
+          "cer": 0.0438608995066505,
+          "exact_match": 0.1815970814754763
+        },
+        "n_sentences": 4934
+      },
+      "rules_only (punctuation + elongation)": {
+        "first_ref": {
+          "wer": 0.23603780647576267,
+          "cer": 0.07526412469095677,
+          "exact_match": 0.03648155654641265
+        },
+        "best_of_refs": {
+          "wer": 0.1321572326456662,
+          "cer": 0.040645801402370854,
+          "exact_match": 0.19112282124037291
+        },
+        "n_sentences": 4934
+      },
+      "rules + learned dictionary": {
+        "first_ref": {
+          "wer": 0.18206999812839228,
+          "cer": 0.0604976098221883,
+          "exact_match": 0.05837049047426023
+        },
+        "best_of_refs": {
+          "wer": 0.10066982427622544,
+          "cer": 0.032359046718477585,
+          "exact_match": 0.2156465342521281
+        },
+        "n_sentences": 4934
+      },
+      "rules + dictionary + predicted language tags": {
+        "first_ref": {
+          "wer": 0.1822665169380498,
+          "cer": 0.0610033999320744,
+          "exact_match": 0.05735711390352655
+        },
+        "best_of_refs": {
+          "wer": 0.10039609139995889,
+          "cer": 0.03259833619008216,
+          "exact_match": 0.21544385893798135
+        },
+        "n_sentences": 4934
+      }
+    },
+    "review_sample": [
+      {
+        "original": "Namshkar Muje Mera bvishya Janna hai ek pothi hai jo insan ka bhavishya batati hai Kripya meri isake regarding help kijiye Muje Mera sampurn bhavishya Janna hai",
+        "system": "Namshkar Mujhe Mera bvishya Jaanna hai ek pothi hai jo insan ka bhavishya batati hai Kripya meri isake regarding help kijiye Mujhe Mera sampurn bhavishya Jaanna hai",
+        "reference": "Namaskar mujhe mera bhavishya jaanna hai ek pothi hai jo insan ka bhavishya batati hai, Kripya meri iske regarding help kijiye Mujhe mera sampurna bhavishya jaanna hai."
+      },
+      {
+        "original": "Bharat bhai sir ya Pan jo ap use kar rahe ho non stick ya kon se company ka hai or model no. Kya hai.???",
+        "system": "Bharat bhai sir ya Pan jo aap use kar rahe ho non stick ya kaun se company ka hai aur model no. Kya hai.?",
+        "reference": "Bharat bhai sir, yeh pan jo aap use kar rahe ho non‑stick, kaun se company ka hai aur model number kya hai?"
+      },
+      {
+        "original": "Yes Modiji hai to itna bharosa hai jai ho Modiji bahut bharosa hai desh ke janta ko.... Jai hind",
+        "system": "Yes Modiji hai to itna bharosa hai jai ho Modiji bahut bharosa hai desh ke janta ko... Jai hind",
+        "reference": "Yes Modiji hain toh itna bharosa hai. Jai ho Modiji bahut bharosa hai desh ke janta ko. Jai Hind."
+      },
+      {
+        "original": "Aur agar oven mein cook karna ho toh kitna time aur kitne degree pe cook karna hoga",
+        "system": "Aur agar oven mein cook karna ho toh kitna time aur kitne degree pe cook karna hoga",
+        "reference": "Aur agar oven mein cook karna ho, toh kitna time aur kitni degree pe cook karna hoga."
+      },
+      {
+        "original": "Hum Students mixi lekar nahi rahte ...rent par sab kuch rakhna muskil ...please kuch students friendly recipe bataye.. Baki you are awesome",
+        "system": "Hum Students mixi lekar nahi rahte... rent par sab kuch rakhna mushkil... please kuch students friendly recipe bataye... Baki you are awesome",
+        "reference": "Hum students mixi lekar nahi rahte, rent par sab kuch rakhna mushkil please kuch students friendly recipe bataye baaki, you are awesome."
+      },
+      {
+        "original": "Sir mai COINDCX se paisa withdraw karna chah raha hu to OTP nahi aa raha hai, kya kare??",
+        "system": "Sir mai COINDCX se paisa withdraw karna chah raha hoon to OTP nahi aa raha hai, kya kare?",
+        "reference": "Sir main COINDCX se paisa withdraw karna chaah raha hoon, toH OTP nahi aa raha hai, kya karen?"
+      },
+      {
+        "original": "Maine toh aaj tak apne bacche ko school hi nhi bheja.....and at the age of eleven he learn capacitor resistance......periodic table....etc.....Im proud of myself ....",
+        "system": "Maine toh aaj tak apne bacche ko school hi nahi bheja... and at the age of eleven hai learn capacitor resistance... periodic table... etc... I'm proud of myself...",
+        "reference": "Maine toh aaj tak apne bacche ko school hi nahi bheja and at the age of eleven he learned capacitor resistance, periodic table, etc. I'm proud of myself."
+      },
+      {
+        "original": "Mere pas rudraksh nahi tha so Maine sirf attend kiya , Kai bar rudrakhsh k liye register kiya bt aata hi nahi hai",
+        "system": "Mere paas rudraksh nahi tha so Maine sirf attend kiya, Kai baar rudrakhsh ke liye register kiya bt aata hi nahi hai",
+        "reference": "Mere pas Rudraksh nahi tha so maine sirf attend kiya, kayi baar Rudrakhsh ke liye register kiya but aata hi nahi hai."
+      },
+      {
+        "original": "Khane ka mon Kar raha lekin kya karun... Mutton price etena badgaya ki mera ek week&#39; ki income se v zada .....",
+        "system": "Khane ka mon Kar raha lekin kya karun... Mutton price etena badgaya ki mera ek week&#39; ki income se v zyada...",
+        "reference": "Khane ka mann kar raha lekin kya karun mutton price itna badh gaya ki mera ek week ki income se bhi zyada."
+      },
+      {
+        "original": "Kaise train kiya aapne apne aapko kya force tha jiski wjha se aap ese huye?",
+        "system": "Kaise train kiya aapne apne aapko kya force tha jiski wjha se aap aise hue?",
+        "reference": "Kaise train kiya aapne apne aapko kya force tha jiski wjha se aap aise huya?"
+      },
+      {
+        "original": "Agar gunaah sabit nahi hoga to aa jayenge, agar gunaah sabit ho jayega to jail mein sadega. Abhi rona mat, pehle dekho kya hota hai.",
+        "system": "Agar gunaah sabit nahi hoga to aa jayenge, agar gunaah sabit ho jayega to jail mein sadega. Abhi rona mat, pehle dekho kya hota hai.",
+        "reference": "Agar gunaah sabit nahi hoga toh aa jayenge, agar gunaah sabit ho jayega toh jail mein saza dega. Abhi rona mat, pehle dekho kya hota hai."
+      },
+      {
+        "original": "view kuch nahi hai sir agar Modi ka haath seer pe ho to kya kuch nahi ho skta",
+        "system": "view kuch nahi hai sir agar Modi ka haath seer pe ho to kya kuch nahi ho sakta",
+        "reference": "View kuch nahi hai sir agar Modi ka haath sar pe ho toh kya kuch nahi ho sakta."
+      },
+      {
+        "original": "BHAI AAPNE BAAL AISE KATAYE HAI KE COMMANDO 4 MAI TOH AAP HE KO HERO LENGE :P HAHAHAHAHHAHAHA",
+        "system": "BHAI AAPNE BAAL AISE KATAYE HAI KE COMMANDO 4 MAI TOH AAP HAI KO HERO LENGE: P HAHAHAHAHHAHAHA",
+        "reference": "Bhai aapne baal aise kataye hai ki commando 4 mein toh aap hi ko hero lenge."
+      },
+      {
+        "original": "Sir upstox me mera order rejected ho raha hai aisa kyu ho raha hai please help sir",
+        "system": "Sir upstox me mera order rejected ho raha hai aisa kyun ho raha hai please help sir",
+        "reference": "Sir, upstox mein mera order reject ho raha hai. Aisa kyun ho raha hai? Please help, Sir."
+      },
+      {
+        "original": "Esha bhi toh ho sakta hai ki 19:46 school me kuch galat ho raha ho pahle se Aur unhone hi police ko pese dekar",
+        "system": "Esha bhi toh ho sakta hai ki 19:46 school me kuch galat ho raha ho pehle se Aur unhone hi police ko paise dekar",
+        "reference": "Aisa bhi toh ho sakta hai ki 19:46 school mein kuch galat ho raha ho pehle se aur unhone hi police ko paise dekar."
+      },
+      {
+        "original": "50000 hi bacha hai sir vo budget ke din Kelie pichhle 1 week se loss hi ho Raha hai achhi si strategy batayega",
+        "system": "50000 hi bacha hai sir vo budget ke din Kelie pichhle 1 week se loss hi ho Raha hai achhi si strategy batayega",
+        "reference": "₹50000 hi bacha hai sir, woh budget ke din ke liye pichle 1 week se loss hi ho raha hai, acchi si strategy batayega."
+      },
+      {
+        "original": "Sir upstox me ek sip kiya tha 1000 deposit kiya lekin ye kuchh bhi nahi dikha raha hai",
+        "system": "Sir upstox me ek sip kiya tha 1000 deposit kiya lekin ye kuchh bhi nahi dikha raha hai",
+        "reference": "Sir upstox mein ek SIP kiya tha 1000 ka deposit kiya lekin ye kuch bhi nahi dikha raha hai."
+      },
+      {
+        "original": "Sir jo NCERT basics se start krna chahte hai unke liye ????",
+        "system": "Sir jo NCERT basics se start karna chahte hai unke liye?",
+        "reference": "Sir, jo NCERT basics se start karna chahte hain?"
+      },
+      {
+        "original": "Rahul Gandhi ji ka pressure hai yeh....jai ho Rahul Gandhi..lekin modi ji Jo log CPF mai hai unka toh btao..2004 sai phele wale?? Jha par na old pension thi na new..wo logo ko laabh milega??",
+        "system": "Rahul Gandhi ji ka pressure hai yeh... jai ho Rahul Gandhi... lekin modi ji Jo log CPF mai hai unka toh batao... 2004 se pehle wale? Jha par na old pension thi na new... wo logon ko laabh milega?",
+        "reference": "Rahul Gandhi ji ka pressure hai yeh jai ho Rahul Gandhi lekin Modi ji Jo log CPF mein hai unka toh batao 2004 se pehle waale? Jaha par na old pension thi na new woh logo ko laabh milega?"
+      },
+      {
+        "original": "Mitti ke bartan main khana thana ho jay to use dobara garam kar sakte hai plz reply",
+        "system": "Mitti ke bartan main khana thana ho jay to use dobara garam kar sakte hai please reply",
+        "reference": "Mitti ke bartan main khana thanda ho jaye to use dobara garam kar sakte hai please reply."
+      },
+      {
+        "original": "App mahila youtuber hai Lekin sahi baat nahi karti ho such Jan kar bhi Anjan ho",
+        "system": "App mahila youtuber hai Lekin sahi baat nahi karti ho such Jan kar bhi Anjan ho",
+        "reference": "App mahila Youtuber hai lekin sahi baat nahi karti ho sach Jaan kar bhi anjaan ho."
+      },
+      {
+        "original": "Bihar m sab kuchh hai Likin industries nahi or app sb leader chupe ho I proud of bihari",
+        "system": "Bihar m sab kuchh hai Likin industries nahi aur app sab leader chupe ho I proud of bihari",
+        "reference": "Bihar mein sab kuchh hai lekin industries nahi aur app sab leader chup ho I proud of Bihari."
+      },
+      {
+        "original": "Aur dhanyavad karna chahta hoon aapka bhi, reporter, aisi news dikhane ke liye, kyunki log aisi news par jyada dhyan nahi dete. Aisi news aap chalayen, iske liye hamari taraf se dhanyavad.",
+        "system": "Aur dhanyavaad karna chahta hoon aapka bhi, reporter, aisi news dikhane ke liye, kyunki log aisi news par jyada dhyan nahi dete. Aisi news aap chalayen, iske liye hamari taraf se dhanyavaad.",
+        "reference": "Aur aapka bhi dhanyavaad karna chahta hoon, reporter, aisi news dikhane ke liye, kyunki log aisi news par jyada dhyan nahi dete. Aisi news aap chalayein, iske liye hamari taraf se dhanyavaad."
+      },
+      {
+        "original": "Sir aap jo bolteho voh sb sahi hai kyaa...app ke review bhi padha karo sirf ako sponsor kar rahe hai isliye tarif mat kro",
+        "system": "Sir aap jo bolteho voh sab sahi hai kya... app ke review bhi padha karo sirf ako sponsor kar rahe hai isliye tarif mat karo",
+        "reference": "Sir, aap jo bolte ho woh sab sahi hai kya aap ke review bhi padha karo sirf aapko sponsor kar rahe hain isliye tarif mat karo."
+      },
+      {
+        "original": "Sir youtube par jo apke polity ki m laxmikant ki video thi wo hata di gyi...plz sir usko youtube pr provide kar de",
+        "system": "Sir youtube par jo aapke polity ki m laxmikant ki video thi wo hata di gayi... please sir usko youtube par provide kar de",
+        "reference": "Sir youtube par jo aapke polity ki M. Laxmikant ki video thi wo hata di gayi please sir usko YouTube par provide kar de."
+      },
+      {
+        "original": "Sir agar aapki videos dekh ke sabne action Lena shuru kar Diya n to inflation 70% ho jayega itna achha and pure knowledge....",
+        "system": "Sir agar aapki videos dekh ke sabne action Lena shuru kar Diya n to inflation 70% ho jayega itna achha and pure knowledge...",
+        "reference": "Sir agar aapki videos dekh kar sabne action lena shuru kar diya nahin to inflation 70% ho jayega, itna achha, and pure knowledge."
+      },
+      {
+        "original": "Mera Desh Badal Raha Hai ... Kyuki Usko Sahi Vision Dene Wala Sewak Mil Gaya Hai.. Modi Ji Mere Sath Sath Caroro Logo ke Sapno Ko Pura Kar Rahe Hai",
+        "system": "Mera Desh Badal Raha Hai... Kyunki Usko Sahi Vision Dene Wala Sewak Mil Gaya Hai... Modi Ji Mere Saath Saath Caroro Logon ke Sapno Ko Pura Kar Rahe Hai",
+        "reference": "Mera desh badal raha hai kyunki usko sahi vision dene wala sevak mil gaya hai. Modi ji mere saath saath crore logon ke sapno ko pura kar rahe hain."
+      },
+      {
+        "original": "koi sathguru nahi hai sab insan hai bhagawan koi nahi hai bato me ulajhate hai ye log kudhrat aapana kam karati hai usa me koi aakh nahi dal sakata",
+        "system": "koi sathguru nahi hai sab insan hai bhagawan koi nahi hai bato me ulajhate hai ye log kudhrat aapana kam karti hai usa me koi aakh nahi dal sakta",
+        "reference": "Koi Sathguru nahi hai sab insan hain bhagawan koi nahi hai baaton mein ulajhte hain yeh log kudrat apna kaam karte hain usme koi aankh nahi daal sakta."
+      },
+      {
+        "original": "Kya aap simple trike se biryani bna k dikha skte ho pls...jo market me milti ha aur jyada mehnat b na ho...",
+        "system": "Kya aap simple tarike se biryani bana ke dikha sakte ho please... jo market me milti ha aur jyada mehnat bhi na ho...",
+        "reference": "Kya aap simple tarike se biryani bana kar dikha sakte ho please jo market me milti hai aur jyada mehnat bhi na ho."
+      },
+      {
+        "original": "Sir bhot khuch samcha Jab koi hame sahi rah dikha taha hai to hum use galat sachte hai Or vakayi piche ho jate hai",
+        "system": "Sir bahut kuch samcha Jab koi hume sahi rah dikha taha hai to hum use galat sachte hai Aur vakayi piche ho jaate hai",
+        "reference": "Sir bahut kuch samjha jab koi hume sahi raah dikhata hai toh hum use galat samajhte hain aur waqai peeche ho jate hain."
+      },
+      {
+        "original": "DARPOK Modi press conference kyu nahi karta hai aur pichle 8 salo may ek bar bhi press conference nahi ki 56 inch k maheshai ney ?",
+        "system": "DARPOK Modi press conference kyun nahi karta hai aur pichle 8 salo may ek baar bhi press conference nahi ki 56 inch ke maheshai ne?",
+        "reference": "Darpok Modi press conference kyu nahi karta hai aur pichle 8 saalo mein ek baar bhi press conference nahi ki 56 inch k maheshai ney?"
+      },
+      {
+        "original": "Hamari bhi ais shadi ho sakti hai 100 logon ko 25000 ka course bechne se jiska success rate 0% hai",
+        "system": "Hamari bhi ais shadi ho sakti hai 100 logon ko 25000 ka course bechne se jiska success rate 0% hai",
+        "reference": "Humari bhi aisi shadi ho sakti hai 100 logon ko ₹25000 ka course bechne se jiska success rate 0% hai."
+      },
+      {
+        "original": "bhai is lockdown me log bhook se mar rahe he . kae log 4 se 5 dino se kuch nahi khaya",
+        "system": "bhai is lockdown me log bhook se mar rahe hai. ke log 4 se 5 dino se kuch nahi khaya",
+        "reference": "Bhai es lockdown me log bhook se mar rahe hai, kai log 4 se 5 deeno se kuchh nahi khaya."
+      },
+      {
+        "original": "Bahut time lagta he...meine apne dono beto ko laga diya kaam pe...chaap bhi ghar pe banaai. Subah se dophar ho gai",
+        "system": "Bahut time lagta hai... maine apne dono beto ko laga diya kaam pe... chaap bhi ghar pe banaai. Subah se dophar ho gayi",
+        "reference": "Bahut time lagta hai, maine apne dono beton ko laga diya kaam pe, chaap bhi ghar pe banayi. Subah se dopahar ho gayi."
+      },
+      {
+        "original": "Wow Puri to mai aaisa banati hooo But wo aata guthaneki PARAT kitani acchi hai ......mast hai",
+        "system": "Wow Puri to mai aisa banati ho But wo aata guthaneki PARAT kitani acchi hai... mast hai",
+        "reference": "Wow poori toh mai aisa banati hun but woh aata guthanegi paratha kitni acchi hai mast hai."
+      },
+      {
+        "original": "Jo meet khata hai .vo snatani ..nahi hai ...janwar hai ..! Gire huye lok hain ..ghatia ...hain ..Shri Ram ko na maanne vale log hain...",
+        "system": "Jo meet khata hai. vo snatani... nahi hai... janwar hai...! Gire hue lok hain... ghatia... hain... Shri Ram ko na maanne wale log hain...",
+        "reference": "Jo meat khata hai, wo sanatani nahi hai, janwar hai! Gire huye log hain, ghatiya hain. Shri Ram ko na maanne waale log hain."
+      },
+      {
+        "original": "It&#39;s toooo yummy...isse yummy kuch nhi ho skta..maine jitni baar is tarah se banai sabne itni tareef ki..mai kya batau....",
+        "system": "It&#39; s toooo yummy... isse yummy kuch nahi ho sakta... maine jitni baar is tarah se banai sabne itni tareef ki... mai kya batau...",
+        "reference": "It's too yummy isse yummy kuchh nahi ho sakta maine jitni baar es tarah se banai sabne itni tareef ki mai kya batau."
+      },
+      {
+        "original": "Ek to train kai salo se delay chal raha hai upar se aise protest can be halt of progressing the nation..",
+        "system": "Ek to train kai salo se delay chal raha hai upar se aise protest can be halt of progressing the nation...",
+        "reference": "Ek toh train kai saalon se delay chal raha hai, upar se aise protest can halt the progress of the nation."
+      },
+      {
+        "original": "Govt Tax ke paise kaha use karti hai ye bhi DIGITAL KATE SARKAR JANTA KE SAMNE SARA HISAB RAKHE DUM HAI TO",
+        "system": "Government Tax ke paise kaha use karti hai ye bhi DIGITAL KATE SARKAR JANTA KE SAMNE SARA HISAB RAKHE DUM HAI TO",
+        "reference": "Government Tax ke paise kahaan use karta hai yeh bhi digital karein sarkar janta ke saamne sara hisab rakhe dum hai toh."
+      },
+      {
+        "original": "Are murkh reporter usase ye to pucha hi nahi kon hadpa hai eski jamin O log o log kya ker rahe ho",
+        "system": "Are murkh reporter usse ye to pucha hi nahi kaun hadpa hai eski jamin O log o log kya kar rahe ho",
+        "reference": "Are murkh reporter usse yeh toh pucha hi nahi kaun hadpa hai iski jamin woh log kya kar rahe hain."
+      }
+    ],
+    "error_analysis": {
+      "missed_corrections": [
+        [
+          "to",
+          "toh",
+          843
+        ],
+        [
+          "hai",
+          "hain",
+          616
+        ],
+        [
+          "me",
+          "mein",
+          611
+        ],
+        [
+          "ye",
+          "yeh",
+          433
+        ],
+        [
+          "main",
+          "mein",
+          148
+        ],
+        [
+          "wo",
+          "woh",
+          123
+        ],
+        [
+          "mai",
+          "main",
+          87
+        ],
+        [
+          "mai",
+          "mein",
+          81
+        ],
+        [
+          "kam",
+          "kaam",
+          69
+        ],
+        [
+          "v",
+          "bhi",
+          67
+        ],
+        [
+          "kare",
+          "karein",
+          64
+        ],
+        [
+          "hun",
+          "hoon",
+          63
+        ],
+        [
+          "nahin",
+          "nahi",
+          51
+        ],
+        [
+          "me",
+          "main",
+          48
+        ],
+        [
+          "is",
+          "es",
+          46
+        ],
+        [
+          "acha",
+          "achha",
+          45
+        ],
+        [
+          "vo",
+          "woh",
+          44
+        ],
+        [
+          "kuch",
+          "kuchh",
+          42
+        ],
+        [
+          "acha",
+          "accha",
+          37
+        ],
+        [
+          "jata",
+          "jaata",
+          36
+        ],
+        [
+          "hain",
+          "hai",
+          34
+        ],
+        [
+          "kaha",
+          "kahan",
+          34
+        ],
+        [
+          "jay",
+          "jai",
+          33
+        ],
+        [
+          "achha",
+          "accha",
+          33
+        ],
+        [
+          "kuchh",
+          "kuch",
+          32
+        ]
+      ],
+      "wrong_corrections": [
+        [
+          "hu",
+          "hun",
+          "hoon",
+          57
+        ],
+        [
+          "kyu",
+          "(unchanged in reference)",
+          "kyun",
+          52
+        ],
+        [
+          "or",
+          "(unchanged in reference)",
+          "aur",
+          49
+        ],
+        [
+          "sath",
+          "(unchanged in reference)",
+          "saath",
+          44
+        ],
+        [
+          "h",
+          "hain",
+          "hai",
+          42
+        ],
+        [
+          "ham",
+          "(unchanged in reference)",
+          "hum",
+          36
+        ],
+        [
+          "per",
+          "(unchanged in reference)",
+          "par",
+          34
+        ],
+        [
+          "logo",
+          "(unchanged in reference)",
+          "logon",
+          30
+        ],
+        [
+          "thik",
+          "(unchanged in reference)",
+          "theek",
+          30
+        ],
+        [
+          "hu",
+          "(unchanged in reference)",
+          "hoon",
+          29
+        ],
+        [
+          "he",
+          "(unchanged in reference)",
+          "hai",
+          29
+        ],
+        [
+          "hame",
+          "humein",
+          "hume",
+          27
+        ],
+        [
+          "nhi",
+          "(unchanged in reference)",
+          "nahi",
+          25
+        ],
+        [
+          "kyon",
+          "(unchanged in reference)",
+          "kyun",
+          24
+        ],
+        [
+          "k",
+          "(unchanged in reference)",
+          "ke",
+          24
+        ],
+        [
+          "he",
+          "hi",
+          "hai",
+          23
+        ],
+        [
+          "pahle",
+          "(unchanged in reference)",
+          "pehle",
+          22
+        ],
+        [
+          "iss",
+          "(unchanged in reference)",
+          "is",
+          22
+        ],
+        [
+          "he",
+          "hain",
+          "hai",
+          21
+        ],
+        [
+          "kre",
+          "karein",
+          "kare",
+          20
+        ],
+        [
+          "b",
+          "(unchanged in reference)",
+          "bhi",
+          19
+        ],
+        [
+          "rha",
+          "(unchanged in reference)",
+          "raha",
+          17
+        ],
+        [
+          "nhi",
+          "nahin",
+          "nahi",
+          16
+        ],
+        [
+          "h",
+          "(unchanged in reference)",
+          "hai",
+          16
+        ],
+        [
+          "bahot",
+          "(unchanged in reference)",
+          "bahut",
+          13
+        ]
+      ]
+    },
+    "metric_note": "WER/CER are computed on lower-cased words with punctuation removed, because the references also add capitalisation and sentence punctuation that this normalizer deliberately leaves alone."
+  },
+  "tanglish": {
+    "variant": "tanglish",
+    "reference": "68 hand-written reference pairs (sanity check, not an independent benchmark)",
+    "systems": {
+      "no_normalization (baseline)": {
+        "first_ref": {
+          "wer": 0.33636363636363636,
+          "cer": 0.10631494804156674,
+          "exact_match": 0.20588235294117646
+        },
+        "best_of_refs": {
+          "wer": 0.33636363636363636,
+          "cer": 0.10631494804156674,
+          "exact_match": 0.20588235294117646
+        },
+        "n_sentences": 68
+      },
+      "rules + curated dictionary": {
+        "first_ref": {
+          "wer": 0.013636363636363636,
+          "cer": 0.002398081534772182,
+          "exact_match": 0.9705882352941176
+        },
+        "best_of_refs": {
+          "wer": 0.013636363636363636,
+          "cer": 0.002398081534772182,
+          "exact_match": 0.9705882352941176
+        },
+        "n_sentences": 68
+      },
+      "rules + dictionary + predicted language tags": {
+        "first_ref": {
+          "wer": 0.004545454545454545,
+          "cer": 0.003996802557953637,
+          "exact_match": 0.9852941176470589
+        },
+        "best_of_refs": {
+          "wer": 0.004545454545454545,
+          "cer": 0.003996802557953637,
+          "exact_match": 0.9852941176470589
+        },
+        "n_sentences": 68
+      }
+    },
+    "review_sample": [
+      {
+        "original": "naan inniku college ku late ah varen",
+        "system": "naan inniku college ku late ah varen",
+        "reference": "naan inniku college ku late ah varen"
+      },
+      {
+        "original": "rombbba nalla irukku!!!",
+        "system": "romba nalla irukku!",
+        "reference": "romba nalla irukku!"
+      },
+      {
+        "original": "plsss send pannunga brooo",
+        "system": "please send pannunga bro",
+        "reference": "please send pannunga bro"
+      },
+      {
+        "original": "hiii frndss!!!",
+        "system": "hi friends!",
+        "reference": "hi friends!"
+      },
+      {
+        "original": "nan ipo office ku poren",
+        "system": "naan ippo office ku poren",
+        "reference": "naan ippo office ku poren"
+      },
+      {
+        "original": "nee epdi irukka bro",
+        "system": "nee eppadi irukka bro",
+        "reference": "nee eppadi irukka bro"
+      },
+      {
+        "original": "enaku onnum theriyala",
+        "system": "enakku onnum theriyala",
+        "reference": "enakku onnum theriyala"
+      },
+      {
+        "original": "idhu romba nalla irukku",
+        "system": "ithu romba nalla irukku",
+        "reference": "ithu romba nalla irukku"
+      },
+      {
+        "original": "andha padam semma mass",
+        "system": "antha padam semma mass",
+        "reference": "antha padam semma mass"
+      },
+      {
+        "original": "unaku therila na vidu",
+        "system": "unakku theriyala na vidu",
+        "reference": "unakku theriyala na vidu"
+      },
+      {
+        "original": "plz call pannunga",
+        "system": "please call pannunga",
+        "reference": "please call pannunga"
+      },
+      {
+        "original": "thx bro romba useful ah irundhuchu",
+        "system": "thanks bro romba useful ah irundhuchu",
+        "reference": "thanks bro romba useful ah irundhuchu"
+      },
+      {
+        "original": "u r so cute da",
+        "system": "you are so cute da",
+        "reference": "you are so cute da"
+      },
+      {
+        "original": "ur video super",
+        "system": "your video super",
+        "reference": "your video super"
+      },
+      {
+        "original": "innaiku ipdi pannadhinga",
+        "system": "inniku ippadi pannadhinga",
+        "reference": "inniku ippadi pannadhinga"
+      },
+      {
+        "original": "ennoda frnds ellam vandhaanga",
+        "system": "ennoda friends ellam vandhaanga",
+        "reference": "ennoda friends ellam vandhaanga"
+      },
+      {
+        "original": "hiii bro epdi iruka",
+        "system": "hi bro eppadi iruka",
+        "reference": "hi bro eppadi iruka"
+      },
+      {
+        "original": "super machi!!!",
+        "system": "super machi!",
+        "reference": "super machi!"
+      },
+      {
+        "original": "mudiyala da pls",
+        "system": "mudiyala da please",
+        "reference": "mudiyala da please"
+      },
+      {
+        "original": "mudila bro",
+        "system": "mudiyala bro",
+        "reference": "mudiyala bro"
+      },
+      {
+        "original": "nalla iruku sema song",
+        "system": "nalla irukku semma song",
+        "reference": "nalla irukku semma song"
+      },
+      {
+        "original": "rombha thanks bro",
+        "system": "romba thanks bro",
+        "reference": "romba thanks bro"
+      },
+      {
+        "original": "kandipa varuven",
+        "system": "kandippa varuven",
+        "reference": "kandippa varuven"
+      },
+      {
+        "original": "konja neram wait pannunga",
+        "system": "konjam neram wait pannunga",
+        "reference": "konjam neram wait pannunga"
+      },
+      {
+        "original": "apdi ila bro",
+        "system": "appadi illa bro",
+        "reference": "appadi illa bro"
+      },
+      {
+        "original": "apo nee enna pandra",
+        "system": "appo nee enna panra",
+        "reference": "appo nee enna panra"
+      },
+      {
+        "original": "adhu dhan ennoda problem",
+        "system": "athu thaan ennoda problem",
+        "reference": "athu thaan ennoda problem"
+      },
+      {
+        "original": "yaru da avan",
+        "system": "yaaru da avan",
+        "reference": "yaaru da avan"
+      },
+      {
+        "original": "nanum varen",
+        "system": "nanum varen",
+        "reference": "nanum varen"
+      },
+      {
+        "original": "bcoz avan vandhaan",
+        "system": "because avan vandhaan",
+        "reference": "because avan vandhaan"
+      },
+      {
+        "original": "gud morning anna",
+        "system": "good morning anna",
+        "reference": "good morning anna"
+      },
+      {
+        "original": "wat da panra",
+        "system": "what da panra",
+        "reference": "what da panra"
+      },
+      {
+        "original": "tmrw meeting iruku",
+        "system": "tomorrow meeting irukku",
+        "reference": "tomorrow meeting irukku"
+      },
+      {
+        "original": "b4 poga venam",
+        "system": "b4 poga vendam",
+        "reference": "before poga vendam"
+      },
+      {
+        "original": "pic anuppu pls",
+        "system": "picture anuppu please",
+        "reference": "picture anuppu please"
+      },
+      {
+        "original": "vdo super bro",
+        "system": "video super bro",
+        "reference": "video super bro"
+      },
+      {
+        "original": "nyc song",
+        "system": "nice song",
+        "reference": "nice song"
+      },
+      {
+        "original": "omg semmaaa",
+        "system": "omg semma",
+        "reference": "omg semma"
+      },
+      {
+        "original": "kollaaa mass scene!!!!",
+        "system": "kolla mass scene!",
+        "reference": "kolla mass scene!"
+      },
+      {
+        "original": "sooo cute!!!",
+        "system": "so cute!",
+        "reference": "so cute!"
+      }
+    ],
+    "error_analysis": {
+      "missed_corrections": [
+        [
+          "b4",
+          "before",
+          1
+        ]
+      ],
+      "wrong_corrections": []
+    }
+  }
+}
